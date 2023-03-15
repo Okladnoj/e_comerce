@@ -7,15 +7,15 @@ import '../../../models/product/product_response_model.dart';
 part 'products_api.g.dart';
 
 @module
-abstract class ProjectsApiModule {
+abstract class ProductsApiModule {
   @lazySingleton
-  ProjectsApi getInstance(Dio dio) => ProjectsApi(dio);
+  ProductsApi getInstance(Dio dio) => ProductsApi(dio);
 }
 
 @RestApi()
-abstract class ProjectsApi {
-  factory ProjectsApi(Dio dio, {String baseUrl}) = _ProjectsApi;
+abstract class ProductsApi {
+  factory ProductsApi(Dio dio, {String baseUrl}) = _ProductsApi;
 
   @GET('/products')
-  Future<List<ProductResponseModel>> getAllProjects();
+  Future<List<ProductResponseModel>> getProducts();
 }
