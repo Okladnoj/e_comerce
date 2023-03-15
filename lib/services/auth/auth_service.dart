@@ -11,10 +11,12 @@ class AuthService {
   const AuthService(this._authApi);
 
   Future<LoginResponseModel> login(LoginRequestModel request) {
+    // TODO: should be implemented errors wrapper
     return _authApi.login(request);
   }
 
   Future<void> logout() async {
+    // TODO: should be implemented errors wrapper
     return _authApi.logout();
   }
 }
