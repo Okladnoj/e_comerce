@@ -8,8 +8,8 @@ part of 'login_request_model.dart';
 
 _$_LoginRequestModel _$$_LoginRequestModelFromJson(Map<String, dynamic> json) =>
     _$_LoginRequestModel(
-      username: json['username'] as String,
-      password: json['password'] as String,
+      username: json['username'] as String? ?? '',
+      password: json['password'] as String? ?? '',
     );
 
 Map<String, dynamic> _$$_LoginRequestModelToJson(

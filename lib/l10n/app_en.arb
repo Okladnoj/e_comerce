@@ -14,6 +14,9 @@
     "specialOffers": "Special offers",
     "bestPrices": "The best prices",
     "noProducts": "No products available at the moment",
+    "userName": "User name",
+    "forgotPassword": "Forgot password",
+    "passwordHint": "Password",
     "eComerce": "eComerce",
     "oops": "Ooops..."
 }

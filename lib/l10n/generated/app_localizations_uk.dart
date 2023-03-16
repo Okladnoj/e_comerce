@@ -47,6 +47,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get noProducts => 'На даний момент немає доступних продуктів';
 
   @override
+  String get userName => 'Ім\'я користувача';
+
+  @override
+  String get forgotPassword => 'Забув пароль';
+
+  @override
+  String get passwordHint => 'Пароль';
+
+  @override
   String get eComerce => 'eComerce';
 
   @override

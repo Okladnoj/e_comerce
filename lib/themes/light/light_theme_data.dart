@@ -214,6 +214,7 @@ const _colorSchemeLight = ColorScheme.light(
   primaryContainer: LightStyleConstants.primaryVariant,
   onPrimary: LightStyleConstants.black,
   secondary: LightStyleConstants.secondary,
+  secondaryContainer: LightStyleConstants.secondaryContainer,
   background: LightStyleConstants.background,
   surface: LightStyleConstants.white,
   error: LightStyleConstants.error,

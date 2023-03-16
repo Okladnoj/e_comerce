@@ -177,6 +177,24 @@ abstract class AppLocalizations {
   /// **'No products available at the moment'**
   String get noProducts;
 
+  /// No description provided for @userName.
+  ///
+  /// In en, this message translates to:
+  /// **'User name'**
+  String get userName;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot password'**
+  String get forgotPassword;
+
+  /// No description provided for @passwordHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get passwordHint;
+
   /// No description provided for @eComerce.
   ///
   /// In en, this message translates to:

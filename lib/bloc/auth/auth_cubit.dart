@@ -36,15 +36,29 @@ class AuthCubit extends BaseCubit<AuthState> {
       authorized: token != null,
     ));
 
+    if (token == null) return;
+
     emit(state.copyWith(
       status: StateStatus.loaded,
     ));
   }
 
-  Future<void> login(LoginRequestModel loginModel) async {
+  void setUserName(String value) {
+    emit(state.copyWith(
+      loginModel: state.loginModel.copyWith(username: value),
+    ));
+  }
+
+  void setPassword(String value) {
+    emit(state.copyWith(
+      loginModel: state.loginModel.copyWith(password: value),
+    ));
+  }
+
+  Future<void> login() async {
     emit(state.copyWith(status: StateStatus.refresh));
     final result = await safeAction(() async {
-      return _authService.login(loginModel);
+      return _authService.login(state.loginModel);
     });
 
     emit(state.copyWith(status: StateStatus.loaded));

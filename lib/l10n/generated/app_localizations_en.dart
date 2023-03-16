@@ -47,6 +47,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noProducts => 'No products available at the moment';
 
   @override
+  String get userName => 'User name';
+
+  @override
+  String get forgotPassword => 'Forgot password';
+
+  @override
+  String get passwordHint => 'Password';
+
+  @override
   String get eComerce => 'eComerce';
 
   @override
