@@ -27,7 +27,10 @@ class DrawerProducts extends StatelessWidget {
             tileColor: context.colorScheme.primaryContainer,
             leading: const Icon(Icons.logout),
             title: Text(context.strings.logOut),
-            onTap: onLogOut,
+            onTap: () {
+              Navigator.of(context).pop();
+              onLogOut();
+            },
           ),
         ],
       ),

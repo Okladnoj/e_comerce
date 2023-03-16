@@ -1,5 +1,4 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:e_comerce/models/product/product_response_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -7,6 +6,7 @@ import '../../../base/bloc/base_cubit.dart';
 import '../../../bloc/products/products_cubit.dart';
 import '../../../di/di.dart';
 import '../../../l10n/localization_helper.dart';
+import '../../../models/product/product_response_model.dart';
 import '../../../routes/router.dart';
 import '../../../themes/app_theme.dart';
 import '../../views/design/app_shader_mask.dart';
@@ -40,7 +40,9 @@ class _ProductsPageState extends State<ProductsPage> {
     Scaffold.of(context).openDrawer();
   }
 
-  void _onLogOut() {
+  void _onLogOut() async {
+    await _cubit.logOut();
+    if (!mounted) return;
     context.router.replace(const AuthRoute());
   }
 

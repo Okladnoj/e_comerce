@@ -70,8 +70,10 @@ Future<_i1.GetIt> $initGetIt(
       () => authApiModule.getInstance(gh<_i8.Dio>()));
   gh.lazySingleton<_i14.AuthService>(
       () => _i14.AuthService(gh<_i13.AuthApi>()));
-  gh.factory<_i15.ProductsCubit>(
-      () => _i15.ProductsCubit(gh<_i11.ProductsService>()));
+  gh.factory<_i15.ProductsCubit>(() => _i15.ProductsCubit(
+        gh<_i11.ProductsService>(),
+        gh<_i6.TokenService>(),
+      ));
   gh.factory<_i16.AuthCubit>(() => _i16.AuthCubit(
         gh<_i14.AuthService>(),
         gh<_i6.TokenService>(),
