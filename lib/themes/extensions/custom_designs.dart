@@ -31,7 +31,6 @@ class CustomDesigns extends ThemeExtension<CustomDesigns> {
           offset: Offset(0, 12.52),
         ),
         BoxShadow(
-          // color: Color(0xFF000000),
           color: Color(0x04000000),
           blurRadius: 6.57,
           offset: Offset(0, 4.53),

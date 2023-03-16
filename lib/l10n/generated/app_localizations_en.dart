@@ -35,5 +35,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get logIn => 'Log In';
 
   @override
+  String get logOut => 'Log Out';
+
+  @override
+  String get specialOffers => 'Special offers';
+
+  @override
+  String get bestPrices => 'The best prices';
+
+  @override
+  String get noProducts => 'No products available at the moment';
+
+  @override
+  String get eComerce => 'eComerce';
+
+  @override
   String get oops => 'Ooops...';
 }

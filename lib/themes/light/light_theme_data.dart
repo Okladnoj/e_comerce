@@ -161,7 +161,7 @@ ThemeData _lightThemeData({String? fontFamily}) {
         color: LightStyleConstants.primary,
       ),
       bodySmall: TextStyle(
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w600,
         fontStyle: FontStyle.normal,
         fontVariations: FontVariantConfigs.w500,
         fontFamily: fontFamily,
@@ -211,6 +211,7 @@ ThemeData _lightThemeData({String? fontFamily}) {
 const _colorSchemeLight = ColorScheme.light(
   brightness: Brightness.light,
   primary: LightStyleConstants.primary,
+  primaryContainer: LightStyleConstants.primaryVariant,
   onPrimary: LightStyleConstants.black,
   secondary: LightStyleConstants.secondary,
   background: LightStyleConstants.background,

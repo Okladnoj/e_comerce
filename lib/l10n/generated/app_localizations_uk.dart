@@ -35,5 +35,20 @@ class AppLocalizationsUk extends AppLocalizations {
   String get logIn => 'Увійти';
 
   @override
+  String get logOut => 'Вийти';
+
+  @override
+  String get specialOffers => 'Спеціальні пропозиції';
+
+  @override
+  String get bestPrices => 'Найкращі ціни';
+
+  @override
+  String get noProducts => 'На даний момент немає доступних продуктів';
+
+  @override
+  String get eComerce => 'eComerce';
+
+  @override
   String get oops => 'Халепа...';
 }

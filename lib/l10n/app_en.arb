@@ -10,5 +10,10 @@
     "light": "Light",
     "dark": "Dark",
     "logIn": "Log In",
+    "logOut": "Log Out",
+    "specialOffers": "Special offers",
+    "bestPrices": "The best prices",
+    "noProducts": "No products available at the moment",
+    "eComerce": "eComerce",
     "oops": "Ooops..."
 }

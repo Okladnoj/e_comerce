@@ -17,8 +17,17 @@ class ProductsCubit extends BaseCubit<ProductsState> {
     emit(state.copyWith(status: StateStatus.error, message: message));
   }
 
-  void getProducts() async {
+  Future<void> getProducts() async {
     emit(state.copyWith(status: StateStatus.loading));
+    await _getProducts();
+  }
+
+  Future<void> refreshProducts() async {
+    emit(state.copyWith(status: StateStatus.refresh));
+    await _getProducts();
+  }
+
+  Future<void> _getProducts() async {
     await safeAction(() async {
       final products = await _productsService.getProducts();
       emit(state.copyWith(

@@ -153,6 +153,36 @@ abstract class AppLocalizations {
   /// **'Log In'**
   String get logIn;
 
+  /// No description provided for @logOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Log Out'**
+  String get logOut;
+
+  /// No description provided for @specialOffers.
+  ///
+  /// In en, this message translates to:
+  /// **'Special offers'**
+  String get specialOffers;
+
+  /// No description provided for @bestPrices.
+  ///
+  /// In en, this message translates to:
+  /// **'The best prices'**
+  String get bestPrices;
+
+  /// No description provided for @noProducts.
+  ///
+  /// In en, this message translates to:
+  /// **'No products available at the moment'**
+  String get noProducts;
+
+  /// No description provided for @eComerce.
+  ///
+  /// In en, this message translates to:
+  /// **'eComerce'**
+  String get eComerce;
+
   /// No description provided for @oops.
   ///
   /// In en, this message translates to:
