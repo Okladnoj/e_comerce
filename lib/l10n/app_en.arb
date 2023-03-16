@@ -1,0 +1,14 @@
+{
+    "@@locale": "en",
+    "flag": "🇬🇧",
+    "languages": "Languages",
+    "languageName": "English",
+    "fonts": "Fonts",
+    "serverErrorMessage": "Server error occurred",
+    "errorInternetConnection": "Internet Connection Error",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "logIn": "Log In",
+    "oops": "Ooops..."
+}

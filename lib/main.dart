@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+import 'bloc/app_controller/app_controller_cubit.dart';
+import 'di/di.dart';
+import 'e_comers_app.dart';
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  await configureDependencies(const Environment(Environment.dev));
+
+  runApp(
+    BlocProvider<AppControllerCubit>(
+      create: (_) => locator()..init(),
+      child: EComersApp(router: locator()),
+    ),
+  );
 }
